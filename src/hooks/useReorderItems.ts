@@ -7,7 +7,7 @@ export default function useReorderItems() {
   const initialItems = usetodoAppStore.getState().items;
 
   // state for framer-motion Reorder component
-  const [listItems, setListItems] = useState<ToDoItem[]>(initialItems);
+  const [listItems, setListItems] = useState<ToDoItem[]>([]);
 
   useEffect(() => {
     setListItems(initialItems);
