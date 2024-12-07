@@ -10,6 +10,7 @@ export default function useReorderItems() {
   const [listItems, setListItems] = useState<ToDoItem[]>(initialItems);
 
   useEffect(() => {
+    setListItems(initialItems);
     if (!toDoItems) return;
     setListItems(toDoItems);
   }, [initialItems, toDoItems]);
