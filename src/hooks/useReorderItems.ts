@@ -12,6 +12,6 @@ export default function useReorderItems() {
   useEffect(() => {
     if (!toDoItems) return;
     setListItems(toDoItems);
-  }, [toDoItems]);
+  }, [initialItems, toDoItems]);
   return { listItems, setListItems };
 }
